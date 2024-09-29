@@ -1,0 +1,15 @@
+// src/styles/_variables.scss
+$primary-color: #ffffff;
+$font-stack:'Montserrat', sans-serif;
+
+
+
+
+
+// src/styles/App.scss
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: $primary-color;
+  color: white;
+}
