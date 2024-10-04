@@ -1,10 +1,9 @@
-
+import Banner from "../../Components/Molecules/Banner";
 
 const Home = () => {
     return (
         <div>
-            
-            <img src={banner} alt="" />
+            <Banner/>
         </div>
     )
 };

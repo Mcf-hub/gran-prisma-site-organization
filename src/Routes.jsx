@@ -5,12 +5,12 @@ import QuemSomos from './Pages/QuemSomos/index';
 import Servicos from './Pages/Serviços';
 import Fotos from './Pages/Fotos';
 import Contatos from './Pages/Contato';
-import Header from './Components/Header/index';
+import Header from './Components/Organisms/Header/index';
 
 function AppRoutes() {
   return (
     <>
-      <Header />
+      <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/quem-somos" element={<QuemSomos />} />
