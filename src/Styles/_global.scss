@@ -1,16 +1,21 @@
 $primary-color: #ffffff;
-$font-stack: 'Montserrat', sans-serif;
+$font-stack: "Quicksand", sans-serif;;
 
 /* Adicione variáveis para tamanhos de fontes responsivos */
 $base-font-size: 16px;
 $small-font-size: 14px;
 $large-font-size: 18px;
 
-body {
+body{
+  font-family: $font-stack;
+  margin: 0%;
+}
+.appContainer, .mainContent{
   font-family: $font-stack;
   background-color: $primary-color;
   color: white;
   font-size: $base-font-size;
+  margin: 0%;
 
 
   @media (max-width: 768px) {

@@ -1,0 +1,40 @@
+.fraseSection {
+    background-color: #424F5C;
+    padding: 20px;
+    text-align: center;
+    margin-top: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  
+    .fraseContent {
+      p {
+        font-size: 18px;
+        font-weight:    lighter;
+        color: #ffffff;
+        
+      }
+    }
+  
+    .divider {
+      width: 180px; /* Largura da linha */
+     
+      background-color: #ffffff; /* Cor da linha */
+       /* Centraliza a linha e adiciona espaçamento */
+    }
+  
+    @media (max-width: 768px) {
+      .fraseContent p {
+        font-size: 14px;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .fraseContent p {
+        font-size: 12px;
+      }
+    }
+  }
+  

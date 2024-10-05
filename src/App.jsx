@@ -1,14 +1,13 @@
 import React from "react";
-
 import AppRoutes from "./Routes";
 import { BrowserRouter } from "react-router-dom";
-import styles from "./Styles/_global.scss";
+import "./Styles/_global.scss"; // Importando o SCSS normalmente
+
 const App = () => {
   return (
     <BrowserRouter>
-      <div className={styles.appContainer}>
-       
-        <main className={styles.mainContent}>
+      <div className="appContainer"> {/* Usando a classe diretamente */}
+        <main className="mainContent">
           <AppRoutes />
         </main>
       </div>

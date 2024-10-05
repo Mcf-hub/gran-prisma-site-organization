@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <section
       className={styles.banner}
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${backgroundImage})` }}
     >
       <div className={styles.bannerContent}>
         <h1>Dê o primeiro passo para algo grandioso.</h1>
