@@ -67,7 +67,7 @@
   }
 
   h2{
-    font-size: 1.5rem;
+  
     font-weight: 400;
     color: #333;
     margin: 0%;
@@ -75,9 +75,7 @@
   
   @media (max-width: 768px) {
 
-    h2{
-        font-size: 1.2rem;
-    }
+ 
     .photoWrapper {
         min-width: 50%; 
       }
@@ -88,10 +86,7 @@
   }
   
   @media (max-width: 480px) {
-    
-    h2{
-        font-size: 1rem;
-    }
+
     .photoWrapper {
         min-width: 100%;
       }

@@ -11,7 +11,7 @@
   
     .fraseContent {
       p {
-        font-size: 18px;
+        
         font-weight:    lighter;
         color: #ffffff;
         
@@ -19,16 +19,5 @@
     }
 
   
-    @media (max-width: 768px) {
-      .fraseContent p {
-        font-size: 14px;
-      }
-    }
-  
-    @media (max-width: 480px) {
-      .fraseContent p {
-        font-size: 12px;
-      }
-    }
   }
   

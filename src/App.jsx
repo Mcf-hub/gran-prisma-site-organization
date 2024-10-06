@@ -2,6 +2,7 @@ import React from "react";
 import AppRoutes from "./Routes";
 import { BrowserRouter } from "react-router-dom";
 import "./Styles/_global.scss"; // Importando o SCSS normalmente
+import Footer from "./Components/Organisms/Footer";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
         <main className="mainContent">
           <AppRoutes />
         </main>
+        <Footer/>
       </div>
     </BrowserRouter>
   );

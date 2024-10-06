@@ -1,0 +1,72 @@
+.footer {
+    background-color: #E9E8DE;
+    color: #333;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      padding: 20px 5%;
+    }
+
+    .footerContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        width: 100%;
+        justify-items: center; // Mantém o conteúdo das colunas centralizado
+
+        @media (max-width: 1200px) {
+          grid-template-columns: repeat(2, 1fr); // 2 colunas para telas médias
+        }
+
+        @media (max-width: 768px) {
+          grid-template-columns: 1fr; // 1 coluna para celulares
+        }
+    }
+
+    .footerColumn {
+      display: flex; // Usando flexbox para centralizar o conteúdo
+      flex-direction: column; // Coloca os itens em coluna
+      align-items: start;   // Centraliza horizontalmente
+      text-align: start; // Centraliza texto
+      h3 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        color: #333; // Cor do título
+      }
+
+      p {
+        font-size: 1rem;
+        margin: 0;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 8px;
+
+          a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.8rem;
+
+            &:hover {
+              color: #424F5C; // Cor ao passar o mouse
+            }
+          }
+        }
+      }
+    }
+
+    .logo {
+        max-width: 40%; // Ajuste de largura
+        height: auto; // Ajusta a altura automaticamente
+        margin: 0 auto; // Centraliza a imagem
+        padding: 20px 0; // Ajusta o padding conforme necessário
+    }
+}

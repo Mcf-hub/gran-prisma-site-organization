@@ -1,28 +1,106 @@
 $primary-color: #ffffff;
-$font-stack: "Quicksand", sans-serif;;
+$font-stack: "Quicksand", sans-serif;
 
-/* Adicione variáveis para tamanhos de fontes responsivos */
+/* Variáveis para tamanhos de fontes responsivos */
 $base-font-size: 16px;
 $small-font-size: 14px;
 $large-font-size: 18px;
+$extra-large-font-size: 20px; /* Para monitores grandes */
 
-body{
+/* Tamanhos de fonte específicos para h2 e p */
+$h2-base-font-size: 1.2rem;
+$h2-small-font-size: 0.9rem;
+$h2-large-font-size: 1.2rem;
+$h2-extra-large-font-size: 2rem; /* Para monitores grandes */
+
+$p-base-font-size: 0.9rem;
+$p-small-font-size: 0.8rem;
+$p-large-font-size: 0.9rem;
+$p-extra-large-font-size: 1.4rem; /* Para monitores grandes */
+
+body {
   font-family: $font-stack;
-  margin: 0%;
+  margin: 0;
 }
-.appContainer, .mainContent{
+
+.appContainer, .mainContent {
   font-family: $font-stack;
   background-color: $primary-color;
   color: white;
   font-size: $base-font-size;
-  margin: 0%;
+  margin: 0;
 
-
-  @media (max-width: 768px) {
-    font-size: $small-font-size; 
+  /* Celulares (até 480px) */
+  @media (max-width: 480px) {
+    font-size: $small-font-size;
   }
 
+  /* Telas médias (até 768px) */
+  @media (max-width: 768px) {
+    font-size: $small-font-size;
+  }
+
+  /* Telas grandes (acima de 1200px) */
   @media (min-width: 1200px) {
     font-size: $large-font-size;
+  }
+
+  /* Monitores grandes (acima de 1600px) */
+  @media (min-width: 1600px) {
+    font-size: $extra-large-font-size;
+  }
+}
+
+/* Estilos globais para h2 */
+h2 {
+  font-size: $h2-base-font-size;
+  font-weight: 500;
+  color: #333;
+
+  /* Celulares (até 480px) */
+  @media (max-width: 480px) {
+    font-size: $h2-small-font-size;
+  }
+
+  /* Telas médias (até 768px) */
+  @media (max-width: 768px) {
+    font-size: $h2-small-font-size;
+  }
+
+  /* Telas grandes (acima de 1200px) */
+  @media (min-width: 1200px) {
+    font-size: $h2-large-font-size;
+  }
+
+  /* Monitores grandes (acima de 1600px) */
+  @media (min-width: 1600px) {
+    font-size: $h2-extra-large-font-size;
+  }
+}
+
+/* Estilos globais para p */
+p {
+  font-size: $p-base-font-size;
+  font-weight: lighter;
+  color: #333;
+
+  /* Celulares (até 480px) */
+  @media (max-width: 480px) {
+    font-size: $p-small-font-size;
+  }
+
+  /* Telas médias (até 768px) */
+  @media (max-width: 768px) {
+    font-size: $p-small-font-size;
+  }
+
+  /* Telas grandes (acima de 1200px) */
+  @media (min-width: 1200px) {
+    font-size: $p-large-font-size;
+  }
+
+  /* Monitores grandes (acima de 1600px) */
+  @media (min-width: 1600px) {
+    font-size: $p-extra-large-font-size;
   }
 }
