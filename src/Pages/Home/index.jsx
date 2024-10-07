@@ -11,7 +11,7 @@ const Home = () => {
         <div className={styles.homeContainer}>
             <Banner/>
             <FraseSection/>
-            <ThreeSquares/>
+            <ThreeSquares showButton={true}/>
             <Gallery/>
             <Services/>
             <SessaoImagemTexto/>

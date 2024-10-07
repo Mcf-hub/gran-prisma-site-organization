@@ -9,7 +9,7 @@ const QuemSomos = () => {
         <div>
             <QuemSomoss/>
             <NossaHist/>
-            <ThreeSquares/>
+            <ThreeSquares showButton={false}/>
             <DifferentSection/>
             <SustainabilitySection/>
             <BackgroundSection/>
