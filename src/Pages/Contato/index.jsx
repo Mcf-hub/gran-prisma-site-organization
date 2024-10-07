@@ -1,6 +1,10 @@
+import ContactSection from "../../Components/Organisms/Contact";
+
 const Contato = () => {
     return (
-        <div><h1>Contato</h1></div>
+        <div>
+            <ContactSection/>
+        </div>
     )
 };
 
