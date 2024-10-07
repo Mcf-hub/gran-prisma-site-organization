@@ -1,0 +1,39 @@
+.sustainabilitySection {
+    padding: 40px 10%;
+    background-color: #A6B981; // Fundo verde
+    color: white; // Cor do texto
+  
+    h2 {
+      text-align: center;
+      color: white;
+    }
+  
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+  
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr; // Uma coluna em telas menores
+      }
+    }
+  
+    .topic {
+      background-color: rgba(255, 255, 255, 0.096); // Fundo semi-transparente
+      border-radius: 10px; // Bordas arredondadas
+      padding: 20px;
+      
+  
+      h3 {
+        margin: 0 0 8px; // Margem do título
+        color: #ffffff; // Cor do título
+      }
+  
+      p {
+        margin: 0; // Remove margem da descrição
+        color: rgba(255, 255, 255, 0.8); // Cor da descrição
+        
+      }
+    }
+  }
+  
