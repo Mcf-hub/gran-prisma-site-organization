@@ -1,35 +1,46 @@
 .customButton {
-    border: 1px solid #333;
-    padding: 10px 20px;
-    border-radius: 25px;
-    background-color: transparent;
-    color: #333;
-    
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  
+  border: 1px solid #333;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: transparent;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &.white {
+    color: #fff;
+    border: 1px solid #fff;
+
     &:hover {
-      background-color: rgba(0, 0, 0, 0.1);
-    }
-  
-    &.white {
-      
-      color: #ffff;
-      border: 1px solid #ffff;
-  
-      &:hover {
-        background-color: #f0f0f044;
-      }
-    }
-  
-    @media (max-width: 768px) {
-      font-size: 14px;
-      padding: 8px 16px;
-    }
-  
-    @media (max-width: 480px) {
-      font-size: 12px;
-      padding: 6px 12px;
+      background-color: #f0f0f044;
     }
   }
-  
+
+ 
+  @media (min-width: 1600px) {
+    font-size: 18px; 
+    padding: 12px 24px; 
+  }
+
+ 
+  @media (min-width: 1200px) {
+    font-size: 16px; 
+    padding: 10px 20px;
+  }
+
+ 
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+ 
+  @media (max-width: 480px) {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}

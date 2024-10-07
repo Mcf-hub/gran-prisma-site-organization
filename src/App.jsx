@@ -3,6 +3,7 @@ import AppRoutes from "./Routes";
 import { BrowserRouter } from "react-router-dom";
 import "./Styles/_global.scss"; // Importando o SCSS normalmente
 import Footer from "./Components/Organisms/Footer";
+import Direitos from "./Components/Atoms/Direitos";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
           <AppRoutes />
         </main>
         <Footer/>
+        <Direitos/>
       </div>
     </BrowserRouter>
   );
