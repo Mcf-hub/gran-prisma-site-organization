@@ -66,7 +66,7 @@ const Footer = () => {
           <ul>
             <li>
               <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
-              <a href="mailto:www.contato@granprisma.com"> www.contato@granprisma.com</a>
+              <a href="mailto:contato@granprisma.com"> contato@granprisma.com</a>
             </li>
             <li>
               <FontAwesomeIcon icon={faWhatsapp} className={styles.icon} />
