@@ -1,23 +1,206 @@
 $primary-color: #ffffff;
-$font-stack: 'Montserrat', sans-serif;
+$font-stack: "Quicksand", sans-serif;
 
-/* Adicione variáveis para tamanhos de fontes responsivos */
+
 $base-font-size: 16px;
 $small-font-size: 14px;
 $large-font-size: 18px;
+$extra-large-font-size: 20px; 
+
+$h1-base-font-size: 1.8rem;
+$h1-small-font-size: 1.1rem;
+$h1-large-font-size: 2rem;
+$h1-extra-large-font-size: 2.5rem;
+
+$h2-base-font-size: 1.2rem;
+$h2-small-font-size: 0.9rem;
+$h2-large-font-size: 1.2rem;
+$h2-extra-large-font-size: 1.5rem;
+
+$h3-base-font-size: 0.8rem;
+$h3-small-font-size: 0.7rem;
+$h3-large-font-size: 0.9rem;
+$h3-extra-large-font-size: 1.2rem;
+
+$p-base-font-size: 0.9rem;
+$p-small-font-size: 0.8rem;
+$p-large-font-size: 0.9rem;
+$p-extra-large-font-size: 1.2rem; 
+
+$li-base-font-size: 0.8rem;
+$li-small-font-size: 0.7rem;
+$li-large-font-size: 0.8rem;
+$li-extra-large-font-size: 1.2rem;
 
 body {
+  font-family: $font-stack;
+  margin: 0;
+}
+
+.appContainer, .mainContent {
   font-family: $font-stack;
   background-color: $primary-color;
   color: white;
   font-size: $base-font-size;
+  margin: 0;
+
+  
+  @media (max-width: 480px) {
+    font-size: $small-font-size;
+  }
+
+  
+  @media (max-width: 768px) {
+    font-size: $small-font-size;
+  }
+
+ 
+  @media (min-width: 1200px) {
+    font-size: $large-font-size;
+  }
+
+ 
+  @media (min-width: 1600px) {
+    font-size: $extra-large-font-size;
+  }
+}
+
+h1 {
+  font-size: $h1-base-font-size;
+  font-weight: 700;
+  color: white;
+
+  
+  @media (max-width: 480px) {
+    font-size: $h1-small-font-size;
+  }
+
+ 
+  @media (max-width: 768px) {
+    font-size: $h1-small-font-size;
+  }
+
+  
+  @media (min-width: 1200px) {
+    font-size: $h1-large-font-size;
+  }
+
+ 
+  @media (min-width: 1600px) {
+    font-size: $h1-extra-large-font-size;
+  }
+}
+
+h2 {
+  font-size: $h2-base-font-size;
+  font-weight: 500;
+  color: #333;
+
+  
+  @media (max-width: 480px) {
+    font-size: $h2-small-font-size;
+  }
+
+  
+  @media (max-width: 768px) {
+    font-size: $h2-small-font-size;
+  }
+
+  
+  @media (min-width: 1200px) {
+    font-size: $h2-large-font-size;
+  }
+
+
+  @media (min-width: 1600px) {
+    font-size: $h2-extra-large-font-size;
+  }
+}
+
+h3 {
+  font-size: $h3-base-font-size;
+  font-weight: bold;
+  color: #333;
+
+
+  @media (max-width: 480px) {
+    font-size: $h3-small-font-size;
+  }
+
+  
+  @media (max-width: 768px) {
+    font-size: $h3-small-font-size;
+  }
+
+  
+  @media (min-width: 1200px) {
+    font-size: $h3-large-font-size;
+  }
+
+  @media (min-width: 1600px) {
+    font-size: $h3-extra-large-font-size;
+  }
+}
+
+
+p {
+  font-size: $p-base-font-size;
+  font-weight: lighter;
+  color: #333;
+
+
+  @media (max-width: 480px) {
+    font-size: $p-small-font-size;
+  }
 
 
   @media (max-width: 768px) {
-    font-size: $small-font-size; 
+    font-size: $p-small-font-size;
   }
 
+ 
   @media (min-width: 1200px) {
-    font-size: $large-font-size;
+    font-size: $p-large-font-size;
+  }
+
+  
+  @media (min-width: 1600px) {
+    font-size: $p-extra-large-font-size;
+  }
+}
+ul {
+  li {
+    font-size: $li-base-font-size;
+    margin-bottom: 8px;
+  
+    a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    &:hover {
+      color: #424F5C; 
+    }
+
+    
+    @media (max-width: 480px) {
+      font-size: $li-small-font-size;
+    }
+
+    
+    @media (max-width: 768px) {
+      font-size: $li-small-font-size;
+    }
+
+   
+    @media (min-width: 1200px) {
+      font-size: $li-large-font-size;
+    }
+
+    
+    @media (min-width: 1600px) {
+      font-size: $li-extra-large-font-size;
+    }
   }
 }
