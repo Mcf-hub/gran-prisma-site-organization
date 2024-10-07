@@ -1,6 +1,10 @@
+import AllServices from "../../Components/Molecules/AllServices";
+
 const Servicos = () => {
     return (
-        <div><h1>Serviços</h1></div>
+        <div>
+            <AllServices/>
+        </div>
     )
 };
 
