@@ -1,6 +1,10 @@
+import ServiceGrid from "../../Components/Organisms/Fotos";
+
 const Fotos = () => {
     return (
-        <div><h1>Fotos</h1></div>
+        <div>
+            <ServiceGrid/>
+        </div>
     )
 };
 
