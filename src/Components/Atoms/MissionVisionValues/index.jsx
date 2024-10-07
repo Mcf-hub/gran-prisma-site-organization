@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCrosshairs, faEye, faGem } from '@fortawesome/free-solid-svg-icons';
 import Button from '../Button';
 
-const ThreeSquares = () => {
+const ThreeSquares = ({ showButton = true }) => { 
   const items = [
     { 
       icon: faCrosshairs, 
@@ -39,9 +39,11 @@ const ThreeSquares = () => {
           <p>{item.text}</p>
         </div>
       ))}
-      <div className={styles.buttonContainer}>
-        <Button label="Saiba mais sobre nossa história" to="/quem-somos" variant="default"/>
-      </div>
+      {showButton && ( 
+        <div className={styles.buttonContainer}>
+          <Button label="Saiba mais sobre nossa história" to="/quem-somos" variant="default" />
+        </div>
+      )}
     </div>
   );
 };

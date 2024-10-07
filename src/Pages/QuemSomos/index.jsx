@@ -1,6 +1,19 @@
+import ThreeSquares from "../../Components/Atoms/MissionVisionValues";
+import BackgroundSection from "../../Components/Molecules/3Imgs";
+import DifferentSection from "../../Components/Molecules/Diferentes";
+import NossaHist from "../../Components/Molecules/NossaHist";
+import QuemSomoss from "../../Components/Molecules/QuemSomos";
+import SustainabilitySection from "../../Components/Molecules/Sustentabilidade";
 const QuemSomos = () => {
     return (
-        <div><h1>Quem Somos</h1></div>
+        <div>
+            <QuemSomoss/>
+            <NossaHist/>
+            <ThreeSquares showButton={false}/>
+            <DifferentSection/>
+            <SustainabilitySection/>
+            <BackgroundSection/>
+        </div>
     )
 };
 
