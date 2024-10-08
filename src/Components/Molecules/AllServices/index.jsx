@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './index.module.scss';
 import box from '../../../Assets/box.jpg';
+import portas from '../../../Assets/porta2.jpg'
+import janela from '../../../Assets/janela.jpg'
 import sacada from '../../../Assets/sacada.jpg';
 import telhado from '../../../Assets/telhado.jpg';
 import fachada from '../../../Assets/fachada2.jpg';
@@ -23,6 +25,16 @@ const services = [
     name: 'Box Elegance',
     description: 'Simplicidade e sofisticação em cada detalhe! Box de vidro sob medida, trazendo mais luminosidade e elegância ao seu banheiro. Uma solução prática e estilosa para transformar seu ambiente.',
     image: box,
+  },
+  {
+    name: 'Portas',
+    description: 'Combinam elegância e modernidade, trazendo mais luz natural e amplitude ao ambiente. Oferecemos modelos como portas de correr, pivotantes e de abrir, com vidro temperado ou laminado, garantindo segurança e estilo. Nossas portas podem ser personalizadas conforme a necessidade do cliente.',
+    image: portas,
+  },
+  {
+    name: 'Janelas',
+    description: 'São ideais para iluminar e ventilar os ambientes, além de proporcionar isolamento acústico e térmico. Trabalhamos com vários estilos, como janelas de correr e maxim-ar, usando vidros de alta resistência, como temperado e laminado, sempre priorizando segurança e conforto.',
+    image: janela,
   },
   {
     name: 'Sacadas',

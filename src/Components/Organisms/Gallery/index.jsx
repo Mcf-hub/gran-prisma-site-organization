@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import styles from './index.module.scss';
-import { Link } from 'react-router-dom';
 import Hr from '../../Atoms/Hr';
 
 import box from '../../../Assets/boxElegance.jpg';
@@ -9,20 +9,27 @@ import fixoEjanela from '../../../Assets/vidroFixoJanela.jpg';
 import telhado from '../../../Assets/telhado.jpg';
 import gazebo from '../../../Assets/gazebo.jpg';
 import elevador from '../../../Assets/elevador.jpg';
-
+import cobertura from '../../../Assets/cobertura.jpg';
+import espelho from '../../../Assets/espelho.jpg';                 
+import aluminio  from '../../../Assets/esquadria.jpg';                                     
 
 const Gallery = () => {
   const photos = [
-    { id: 1, src: box, alt: 'Descrição da Foto 1', link: '/fotos', description: 'Esta é uma imagem representando a primeira descrição.' },
-    { id: 2, src: fachada, alt: 'Descrição da Foto 2', link: '/fotos', description: 'Esta é uma imagem representando a segunda descrição.' },
-    { id: 3, src: fixoEjanela, alt: 'Descrição da Foto 3', link: '/fotos', description: 'Esta é uma imagem representando a terceira descrição.' },
-    { id: 4, src: telhado, alt: 'Descrição da Foto 4', link: '/fotos', description: 'Esta é uma imagem representando a quarta descrição.' },
-    { id: 5, src: gazebo, alt: 'Descrição da Foto 5', link: '/fotos', description: 'Esta é uma imagem representando a quinta descrição.' },
-    { id: 6, src: elevador, alt: 'Descrição da Foto 6', link: '/fotos', description: 'Esta é uma imagem representando a sexta descrição.' },
+    { id: 1, src: box, alt: 'Box Elegance', link: '/fotos', description:'Box Elegance' },
+    { id: 2, src: fachada, alt: 'Fachada', link: '/fotos', description: 'Fachada' },
+    { id: 3, src: fixoEjanela, alt: 'Vidro Fixo e Janela', link: '/fotos', description:  'Vidro Fixo e Janela' },
+    { id: 4, src: telhado, alt: 'Telhado', link: '/fotos', description:'Telhado' },
+    { id: 5, src: gazebo, alt: 'Gazebo', link: '/fotos', description:'Gazebo' },
+    { id: 6, src: elevador, alt: 'Elevador', link: '/fotos', description:'Elevador' },
+    { id: 7, src: cobertura, alt: 'Cobertura', link: '/fotos', description:'Cobertura' },
+    { id: 8, src: espelho, alt: 'Espelho', link: '/fotos', description:'Espelho' },
+    { id: 9, src: aluminio, alt: 'Esquadria de Alumínio', link: '/fotos', description:'Esquadria de Alumínio' },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const photosPerPage = 3; // Exibir três imagens de cada vez
+  const photosPerPage = 3; 
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const nextSlide = () => {
     if (currentIndex < photos.length - photosPerPage) {
@@ -36,6 +43,16 @@ const Gallery = () => {
     }
   };
 
+  const handleNavigation = (link) => {
+    navigate(link);
+    window.scrollTo(0, 0);
+  };
+
+  // useEffect para rolar para o topo ao mudar de rota
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
     <div className={styles.galleryContainer}>
       <h2>Confira nosso trabalho</h2>
@@ -45,10 +62,18 @@ const Gallery = () => {
         <div className={styles.photoTrack}>
           {photos.slice(currentIndex, currentIndex + photosPerPage).map((photo) => (
             <div key={photo.id} className={styles.photoWrapper}>
-              <Link to={photo.link}>
+              <div
+                onClick={() => handleNavigation(photo.link)}
+                className={styles.photoLink} // Nova classe para o link
+                role="button" // Indica que é um botão para acessibilidade
+                tabIndex={0} // Permite que o div seja focado
+                onKeyPress={(e) => {
+                  if (e.key === 'Enter') handleNavigation(photo.link); // Navegação com Enter
+                }}
+              >
                 <img src={photo.src} alt={photo.alt} className={styles.photo} />
                 <span className={styles.description}>{photo.description}</span>
-              </Link>
+              </div>
             </div>
           ))}
         </div>

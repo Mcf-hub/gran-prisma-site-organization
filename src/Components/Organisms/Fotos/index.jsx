@@ -9,6 +9,12 @@ import box2 from '../../../Assets/box1.jpg';
 import box3 from '../../../Assets/box2.jpg';
 import box4 from '../../../Assets/box3.jpg';
 
+import portas from '../../../Assets/porta2.jpg'
+import portas2 from '../../../Assets/porta.jpg'
+
+import janela from '../../../Assets/janela.jpg'
+import janela2 from '../../../Assets/janela2.jpg'
+
 
 import sacada from '../../../Assets/sacada.jpg';
 import sacada2 from '../../../Assets/sacada2.jpg';
@@ -33,8 +39,8 @@ import espelhos from '../../../Assets/espelho.jpg';
 
 import cobertura from '../../../Assets/cobertura.jpg';
 
-import aluminio from '../../../Assets/aluminio.jpg';
-import aluminio2 from '../../../Assets/aluminio2.jpg';
+import aluminio from '../../../Assets/esquadria.jpg';
+import aluminio2 from '../../../Assets/esquadria2.jpg';
 
 import divisoria from '../../../Assets/divisoria.jpg';
 
@@ -72,6 +78,8 @@ const GalleryModal = ({ service, onClose }) => {
 const ServiceGrid = () => {
   const services = [
     { name: 'Box Elegance', image: box, images: [box2, box3, box4] },
+    { name: 'Portas', image: portas, images: [portas2] },
+    { name: 'Janelas', image: janela, images: [janela2] },
     { name: 'Sacadas', image: sacada, images: [sacada2] },
     { name: 'Telhado', image: telhado, images: [telhado2, telhado3, telhado4] },
     { name: 'Fachada', image: fachada, images: [fachada2,fachada3,fachada4,fachada5] },
