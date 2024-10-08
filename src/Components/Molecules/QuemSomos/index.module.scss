@@ -1,0 +1,66 @@
+.sessaoImagemTexto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E9E8DE;
+    height: 300px;
+  
+    .imagemContainer {
+      width: 50%;
+      height: 100%; 
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+  
+    .textoContainer {
+      width: 50%;
+      padding: 0 50px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      align-items: center;
+      
+  
+      h2 {
+        font-weight: lighter;
+      
+      }
+  
+      p {
+        line-height: 1.5;
+        text-align: justify;
+        margin: 0;
+      }
+  
+  
+    }
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      height: auto;
+
+      h2, p{
+        padding:  0 20px ;
+        text-align: start;
+
+      }
+  
+      .imagemContainer,
+      .textoContainer {
+        width: 100%;
+      }
+  
+      .textoContainer {
+        padding: 20px 0;
+        text-align: center;
+  
+      
+      }
+    }
+  }
+  

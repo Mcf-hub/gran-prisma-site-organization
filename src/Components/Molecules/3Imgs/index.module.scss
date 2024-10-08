@@ -1,0 +1,57 @@
+.backgroundSection {
+  display: flex;
+  height: 250px; /* Ajuste a altura conforme necessário */
+  position: relative; /* Para o overlay funcionar corretamente */
+  
+  .image {
+    flex: 1; /* Cada imagem ocupa 1/3 da largura da seção */
+    background-size: cover; /* Cobre todo o espaço da div */
+    background-repeat: no-repeat; /* Não repetir as imagens */
+    background-position: center; /* Centraliza as imagens */
+  }
+
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw; /* Largura ajustada para ser 50% da largura da viewport */
+    max-width: 600px; /* Limite máximo */
+    height: fit-content; /* Altura ajustada para ser 25% da altura da viewport */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Escurecimento */
+    z-index: 1; /* Certifique-se de que o overlay fique acima das imagens */
+    border-radius: 16px;
+  }
+
+  .content {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    z-index: 2; /* Garante que o conteúdo esteja acima do overlay */
+
+    .quote {
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    h3 {
+      color: white;
+    }
+  }
+
+  // Responsividade adicional para dispositivos menores
+  @media (max-width: 768px) {
+    .overlay {
+      width: 80vw; /* Ajusta para ocupar 80% da tela em dispositivos menores */
+      height: auto; /* Altura automática */
+    }
+
+    .content {
+      padding: 10px;
+    }
+  }
+}

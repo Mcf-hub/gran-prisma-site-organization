@@ -1,0 +1,130 @@
+.gridContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+  
+    .serviceItem {
+      position: relative;
+      width: 280px;
+      height: 250px;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+  
+      .serviceImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+  
+      .serviceName {
+        position: absolute;
+        bottom: 0; /* Move o texto para a parte inferior */
+        left: 0; /* Alinha à esquerda */
+        width: 100%; /* Faz o texto ocupar a largura total da imagem */
+        padding: 10px 15px; /* Adiciona um espaçamento interno */
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.6); /* Fundo translúcido */
+        color: white;
+        font-weight: lighter;
+        text-align: left; /* Alinhamento do texto à esquerda */
+        box-sizing: border-box; /* Garante que o padding não afete a largura */
+        border-bottom-left-radius: 8px; /* Ajusta o arredondamento do fundo */
+        border-bottom-right-radius: 8px; /* Arredondamento no canto direito */
+      }
+    }
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  
+    .modal {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 80%;
+      max-width: 800px;
+      text-align: center;
+      position: relative;
+  
+      h2{
+        margin-bottom: 10px;
+        
+      }
+      .imageGrid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+  
+        img {
+          width: 250px;
+          height: 200px;
+          object-fit: cover;
+          
+        }
+      }
+  
+      .closeButton {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 1rem;
+        color: #333;
+        cursor: pointer;
+        z-index: 1001;
+        margin: 10px;
+  
+        &:hover {
+          color: #d32f2f;
+        }}
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gridContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .serviceItem {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+  
+      .serviceImage {
+        height: 250px;
+      }
+    }
+  
+    .modal {
+      width: 90%;
+      max-height:fit-content;
+      .imageGrid {
+        flex-direction: column;
+  
+        img {
+          width: 100%;
+          max-width: 300px;
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,23 @@
+.fraseSection {
+    background-color: #424F5C;
+    padding: 20px;
+    text-align: center;
+    margin-top: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  
+    .fraseContent {
+      h3 {
+        
+        font-weight:    lighter;
+        color: #ffffff;
+        
+      }
+    }
+
+  
+  }
+  
