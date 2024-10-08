@@ -7,6 +7,13 @@ import styles from './index.module.scss';
 import Hr from '../../Atoms/Hr';
 
 const ContactSection = () => {
+
+  const handleWhatsAppClick = () => {
+    const phoneNumber = '+5512996430031';
+    window.open(`https://wa.me/${phoneNumber}`, '_blank');
+  };
+
+
   return (
     <div className={styles.contactContainer}>
       <div className={styles.imageContainer}>
@@ -16,17 +23,20 @@ const ContactSection = () => {
         <h1>Entre em contato</h1>
         <Hr color='dark'/>
         <ul className={styles.contactList}>
+           <li>
+              <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
+              <a href="mailto:contato@granprisma.com"> contato@granprisma.com</a>
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faWhatsapp} className={styles.icon} />
+              <a href="#" onClick={handleWhatsAppClick}> (12)  99643-0031</a>
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faInstagram} className={styles.icon} />
+              <a href="https://www.instagram.com/granprisma/" target="_blank" rel="noopener noreferrer"> @granprisma</a>
+            </li>
           <li>
-            <FontAwesomeIcon icon={faWhatsapp} /> (XX) XXXXX-XXXX
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faInstagram} /> @seuInstagram
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faEnvelope} /> seuemail@exemplo.com
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faMapMarkerAlt} /> Localização: Cidade/Estado
+            <FontAwesomeIcon icon={faMapMarkerAlt} /> Campos do Jordão - SP
           </li>
         </ul>
         <p className={styles.noOffice}>Não contamos com um escritório físico.</p>

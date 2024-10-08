@@ -1,89 +1,77 @@
 .squareContainer {
-    display: flex;                     
-    justify-content: center;          
-    align-items: center;             
-    gap: 2rem;                       
-    padding: 1%;                       
-    flex-wrap: wrap;                   
-  }
-  
-  .square {
-    padding: 2rem;                    
-    text-align: center;                
-    width: 250px;
-    height: 200px;                     
-    position: relative;               
-  
-  
-    &::after {
-      content: '';                     
-      position: absolute;              
-      top: 0;                          
-      right: -10px;                    
-      width: 1px;                     
-      height: 100%;                   
-      background-color: #ddd;         
-    }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1%;
+  flex-wrap: wrap;
+}
 
-    &:last-child::after {
-      display: none;                  
-    }
-  
+.square {
+  padding: 2rem;
+  text-align: center;
+  width: 250px;
+  height: 200px;
+  position: relative;
+
+  // Aplicar a linha apenas para o 1º e o 2º quadrado
+  &:nth-child(1)::after,
+  &:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 1px;
+    height: 100%;
+    background-color: #ddd;
+  }
+
+  h2 {
+    padding: 1rem;
+    text-transform: uppercase;
+    color: #333;
+  }
+
+  p {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+  }
+
+  @media (max-width: 1024px) {
+    width: 200px;
+  }
+
+  @media (max-width: 768px) {
     h2 {
-      padding: 1rem;
-      
-      text-transform: uppercase;
-      color: #333;
-      
+      padding: 0.5rem;
     }
-  
-    p {
-      margin-top: 0;
-      color: #333;
-      text-align: center;
-    }
-  
-   
-    @media (max-width: 1024px) { 
-      width: 200px;                
-    }
-  
-    @media (max-width: 768px) { 
-        h2{
-           
-            padding: 0.5rem;
-          }
-    
-      width: 150px;               
-      height: 200px;              
-    }
-  
-    @media (max-width: 480px) { 
-      width: 100%;               
-      height: auto;   
-      
-      h2{
-        padding: 0.5rem;
-      }
+    width: 150px;
+    height: 200px;
+  }
 
-   
+  @media (max-width: 480px) {
+    width: 100%;
+    height: auto;
 
-      &::after {
-        top: auto;                
-        left: 0;                 
-        right: 0;                 
-        width: 100%;              
-        height: 1px;              
-        position: relative;       
-        margin: 1rem 0;          
-      }
+    h2 {
+      padding: 0.5rem;
+    }
+
+    &::after {
+      top: auto;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 1px;
+      position: absolute;
     }
   }
-  
-  .buttonContainer {
-    display: flex;                    
-    justify-content: center;           
-    width: 100%;   
-    padding-top: 10px;                   
-  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 10px;
+}

@@ -11,6 +11,7 @@ const Button = ({ label, onClick, to, variant = 'default' }) => {
     }
     if (to) {
       navigate(to); 
+      window.scrollTo(0, 0);
     }
   };
 

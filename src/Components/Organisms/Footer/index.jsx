@@ -6,9 +6,9 @@ import styles from './index.module.scss';
 import logo from '../../../Assets/logopng.png';
 
 const Footer = () => {
-  // Função para abrir o WhatsApp com o número
+ 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '+5512996430031'; // Número do WhatsApp
+    const phoneNumber = '+5512996430031';
     window.open(`https://wa.me/${phoneNumber}`, '_blank');
   };
 
