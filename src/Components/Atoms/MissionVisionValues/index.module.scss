@@ -1,7 +1,7 @@
 .squareContainer {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem;
   padding: 1%;
   flex-wrap: wrap;
@@ -11,7 +11,7 @@
   padding: 2rem;
   text-align: center;
   width: 250px;
-  height: 200px;
+  height: fit-content;
   position: relative;
 
   // Aplicar a linha apenas para o 1º e o 2º quadrado
