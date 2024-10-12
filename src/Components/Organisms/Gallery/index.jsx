@@ -62,7 +62,7 @@ const Gallery = () => {
         <div className={styles.photoTrack}>
           {photos.slice(currentIndex, currentIndex + photosPerPage).map((photo) => (
             <div key={photo.id} className={styles.photoWrapper}>
-              <div
+              <div  translate="no"
                 onClick={() => handleNavigation(photo.link)}
                 className={styles.photoLink} // Nova classe para o link
                 role="button" // Indica que é um botão para acessibilidade

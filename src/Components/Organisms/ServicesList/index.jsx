@@ -43,7 +43,7 @@ const Services = () => {
             }}
           >
             <img src={service.icon} alt={service.name} className={styles.icon} />
-            <p>{service.name}</p>
+            <p  translate="no" >{service.name}</p>
           </div>
         ))}
         <div className={styles.serviceItem}>
