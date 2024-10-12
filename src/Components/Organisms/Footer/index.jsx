@@ -26,7 +26,7 @@ const Footer = () => {
         <div className={styles.footerColumn}>
           <h3>Links Rápidos</h3>
           <ul>
-            <li><a href="/">Home</a></li>
+            <li><a href="/"  translate="no" >Home</a></li>
             <li><a href="/quem-somos">Quem Somos</a></li>
             <li><a href="/servicos">Serviços</a></li>
             <li><a href="/fotos">Fotos</a></li>
@@ -37,7 +37,7 @@ const Footer = () => {
         {/* Coluna 3: Serviços */}
         <div className={styles.footerColumn}>
   <h3>Serviços</h3>
-  <div className={styles.servicesContainer}>
+  <div className={styles.servicesContainer} translate='no'>
     <ul>
       <li><a href="/servicos#construcao">Box elegance</a></li>
       <li><a href="/servicos#pintura">Fachada</a></li>

@@ -113,7 +113,7 @@ const ServiceGrid = () => {
           onClick={() => handleServiceClick(service)}
         >
           <img src={service.image} alt={service.name} className={styles.serviceImage} />
-          <h3 className={styles.serviceName}>{service.name}</h3>
+          <h3 translate='no'className={styles.serviceName}>{service.name}</h3>
         </div>
       ))}
       

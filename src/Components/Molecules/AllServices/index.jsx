@@ -121,8 +121,8 @@ const AllServices = () => {
             <img src={service.image} alt={service.name} />
           </div>
           <div className={styles.serviceText}>
-            <h2>{service.name}</h2>
-            <p>{service.description}</p>
+            <h2 translate='no' >{service.name}</h2>
+            <p translate='no'>{service.description}</p>
           </div>
         </div>
       ))}
