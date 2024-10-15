@@ -1,18 +1,24 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import { faInstagram, faWhatsapp} from '@fortawesome/free-brands-svg-icons'; // Importando o ícone do Instagram
+import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'; 
+import { useNavigate } from 'react-router-dom'; // Importando useNavigate para navegação
 import styles from './index.module.scss';
 import logo from '../../../Assets/logopng.png';
 
 const Footer = () => {
- 
+  const navigate = useNavigate();
+
+
+  const handleNavigate = (to) => {
+    navigate(to);
+    window.scrollTo(0, 0); 
+  };
+
   const handleWhatsAppClick = () => {
     const phoneNumber = '+5512996430031';
     window.open(`https://wa.me/${phoneNumber}`, '_blank');
   };
-
-
 
   return (
     <footer className={styles.footer}>
@@ -26,39 +32,38 @@ const Footer = () => {
         <div className={styles.footerColumn}>
           <h3>Links Rápidos</h3>
           <ul>
-            <li><a href="/"  translate="no" >Home</a></li>
-            <li><a href="/quem-somos">Quem Somos</a></li>
-            <li><a href="/servicos">Serviços</a></li>
-            <li><a href="/fotos">Fotos</a></li>
-            <li><a href="/contatos">Contatos</a></li>
+            <li><a onClick={() => handleNavigate('/')} translate="no">Home</a></li>
+            <li><a onClick={() => handleNavigate('/quem-somos')}>Quem Somos</a></li>
+            <li><a onClick={() => handleNavigate('/servicos')}>Serviços</a></li>
+            <li><a onClick={() => handleNavigate('/fotos')}>Fotos</a></li>
+            <li><a onClick={() => handleNavigate('/contato')}>Contatos</a></li>
           </ul>
         </div>
 
         {/* Coluna 3: Serviços */}
         <div className={styles.footerColumn}>
-  <h3>Serviços</h3>
-  <div className={styles.servicesContainer} translate='no'>
-    <ul>
-      <li><a href="/servicos#construcao">Box elegance</a></li>
-      <li><a href="/servicos#pintura">Fachada</a></li>
-      <li><a href="/servicos#reparos">Gazebo</a></li>
-      <li><a href="/servicos#design">Sacada</a></li>
-      <li><a href="/servicos#decoracao">Vidros temperados e laminados</a></li>
-      <li><a href="/servicos#construcao">Espelhos</a></li>
-      <li><a href="/servicos#pintura">Coberturas em vidro e policarbonato</a></li>
-    </ul>
-    <ul>
-      <li><a href="/servicos#reparos">Esquadrias de alumínio</a></li>
-      <li><a href="/servicos#design">Divisórias de vidro</a></li>
-      <li><a href="/servicos#decoracao">Telhado</a></li>
-      
-      <li><a href="/servicos#pintura">Reparos e manutenção</a></li>
-      <li><a href="/servicos#reparos">Projetos personalizados</a></li>
-      <li><a href="/servicos#design">Vidros decorativos</a></li>
-      <li><a href="/servicos#decoracao">Portas de loja</a></li>
-    </ul>
-  </div>
-</div>
+          <h3>Serviços</h3>
+          <div className={styles.servicesContainer} translate="no">
+            <ul>
+              <li><a onClick={() => handleNavigate('/servicos')}>Box elegance</a></li>
+              <li><a onClick={() => handleNavigate('/servicos')}>Fachada</a></li>
+              <li><a onClick={() => handleNavigate('/servicos')}>Gazebo</a></li>
+              <li><a onClick={() => handleNavigate('/servicos')}>Sacada</a></li>
+              <li><a onClick={() => handleNavigate('/servicos')}>Vidros temperados e laminados</a></li>
+              <li><a onClick={() => handleNavigate('/servicos')}>Espelhos</a></li>
+              <li><a onClick={() => handleNavigate('/servicos')}>Coberturas em vidro e policarbonato</a></li>
+            </ul>
+            <ul>
+              <li><a onClick={() => handleNavigate('/servicos')}>Esquadrias de alumínio</a></li>
+              <li><a onClick={() => handleNavigate('/servicos')}>Divisórias de vidro</a></li>
+              <li><a onClick={() => handleNavigate('/servicos')}>Telhado</a></li>
+              <li><a onClick={() => handleNavigate('/servicos')}>Reparos e manutenção</a></li>
+              <li><a onClick={() => handleNavigate('/servicos')}>Projetos personalizados</a></li>
+              <li><a onClick={() => handleNavigate('/servicos')}>Vidros decorativos</a></li>
+              <li><a onClick={() => handleNavigate('/servicos')}>Portas de loja</a></li>
+            </ul>
+          </div>
+        </div>
 
         {/* Coluna 4: Contato */}
         <div className={styles.footerColumn}>
@@ -70,7 +75,7 @@ const Footer = () => {
             </li>
             <li>
               <FontAwesomeIcon icon={faWhatsapp} className={styles.icon} />
-              <a href="#" onClick={handleWhatsAppClick}> (12)  99643-0031</a>
+              <a href="#" onClick={handleWhatsAppClick}> (12) 99643-0031</a>
             </li>
             <li>
               <FontAwesomeIcon icon={faInstagram} className={styles.icon} />
