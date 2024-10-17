@@ -7,7 +7,10 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <img src={logo} alt="Logo Gran Prisma" />
+        {/* Adicionando Link em torno da imagem do logo */}
+        <Link to="/">
+          <img src={logo} alt="Logo Gran Prisma" />
+        </Link>
       </div>
       <nav className={styles.navbar}>
         <ul>

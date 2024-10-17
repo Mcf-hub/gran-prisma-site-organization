@@ -11,6 +11,7 @@ import temperados from '../../../Assets/temperado.jpg';
 import espelhos from '../../../Assets/espelho.jpg';
 import cobertura from '../../../Assets/cobertura.jpg';
 import aluminio from '../../../Assets/aluminio.jpg';
+import pvc from '../../../Assets/esquadriapvc.jpg';
 import divisoria from '../../../Assets/divisoria.jpg';
 import elevador from '../../../Assets/elevador.jpg';
 import reparos from '../../../Assets/reparos.jpg';
@@ -75,6 +76,11 @@ const services = [
     name: 'Esquadrias de Alumínio',
     description: 'Instale esquadrias de alumínio que combinam durabilidade, design moderno e isolamento térmico e acústico. Perfeitas para projetos residenciais e comerciais.',
     image:aluminio,
+  },
+  {
+    name: 'Esquadrias de PVC',
+    description: 'Instale esquadrias de PVC que oferecem excelente isolamento térmico e acústico, resistência a intempéries e manutenção mínima. Ideais para projetos residenciais e comerciais, proporcionando eficiência energética e conforto.',
+    image: pvc,
   },
   {
     name: 'Divisórias de Vidro',
