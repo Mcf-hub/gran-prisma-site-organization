@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.839b2658.css",
-    "main.js": "/static/js/main.67b2b9d0.js",
+    "main.js": "/static/js/main.d09ca115.js",
     "static/media/logopng.png": "/static/media/logopng.6e5a8d8226366d7505ae.png",
     "static/media/gazebo4.jpg": "/static/media/gazebo4.8d30f2e24e9f91247360.jpg",
     "static/media/sacada2.jpg": "/static/media/sacada2.6ef76600fe01a3cd5e6b.jpg",
@@ -49,10 +49,10 @@
     "static/media/telhadoIcon.png": "/static/media/telhadoIcon.0f4c1d00d0c8b92aa711.png",
     "index.html": "/index.html",
     "main.839b2658.css.map": "/static/css/main.839b2658.css.map",
-    "main.67b2b9d0.js.map": "/static/js/main.67b2b9d0.js.map"
+    "main.d09ca115.js.map": "/static/js/main.d09ca115.js.map"
   },
   "entrypoints": [
     "static/css/main.839b2658.css",
-    "static/js/main.67b2b9d0.js"
+    "static/js/main.d09ca115.js"
   ]
 }
