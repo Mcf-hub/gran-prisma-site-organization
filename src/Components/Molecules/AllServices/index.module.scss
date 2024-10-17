@@ -1,10 +1,10 @@
 .servicesContainer {
     display: flex;
     flex-direction: column;
-    gap: 40px; /* Espaço entre os serviços */
+    gap: 40px; 
     padding: 20px;
     align-items: center;
-  
+    cursor: context-menu;
     .serviceItem {
       display: flex;
       justify-content: space-between;
@@ -13,12 +13,12 @@
       border-bottom: 1px solid #ccc;
   
       .serviceImage {
-        flex: 1 1 50%; /* A imagem ocupará 40% do espaço disponível */
+        flex: 1 1 50%; 
         display: flex;
-        justify-content: center; /* Centraliza a imagem */
+        justify-content: center; 
         img {
           width: 80%;
-          /* Mantém a imagem com um tamanho adequado */
+          
           height: 440px;
           object-fit: cover;
           border-radius: 8px;
@@ -26,11 +26,11 @@
       }
   
       .serviceText {
-        flex: 1 1 50%; /* O texto ocupará 50% do espaço disponível */
+        flex: 1 1 50%; 
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0 20px; /* Adiciona espaço entre o texto e a imagem */
+        padding: 0 20px; 
         text-align: left;
   
         h2 {
@@ -48,7 +48,7 @@
       }
     }
   
-    /* Alterna a ordem do texto e da imagem para os serviços pares */
+    
     .reversed {
       flex-direction: row-reverse;
     }

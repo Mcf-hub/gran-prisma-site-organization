@@ -55,6 +55,7 @@ const Footer = () => {
             </ul>
             <ul>
               <li><a onClick={() => handleNavigate('/servicos')}>Esquadrias de alumínio</a></li>
+              <li><a onClick={() => handleNavigate('/servicos')}>Esquadrias de PVC</a></li>
               <li><a onClick={() => handleNavigate('/servicos')}>Divisórias de vidro</a></li>
               <li><a onClick={() => handleNavigate('/servicos')}>Telhado</a></li>
               <li><a onClick={() => handleNavigate('/servicos')}>Reparos e manutenção</a></li>

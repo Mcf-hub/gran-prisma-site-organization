@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.46fcccca.css",
-    "main.js": "/static/js/main.756a63d7.js",
+    "main.css": "/static/css/main.839b2658.css",
+    "main.js": "/static/js/main.67b2b9d0.js",
     "static/media/logopng.png": "/static/media/logopng.6e5a8d8226366d7505ae.png",
     "static/media/gazebo4.jpg": "/static/media/gazebo4.8d30f2e24e9f91247360.jpg",
     "static/media/sacada2.jpg": "/static/media/sacada2.6ef76600fe01a3cd5e6b.jpg",
@@ -40,6 +40,7 @@
     "static/media/divisoria.jpg": "/static/media/divisoria.c0a76cbf2e5db0c7e8bb.jpg",
     "static/media/esquadria2.jpg": "/static/media/esquadria2.b85e9a3b6d64a2b3d55c.jpg",
     "static/media/porta.jpg": "/static/media/porta.d1284b50608b8c975d2a.jpg",
+    "static/media/esquadriapvc.jpg": "/static/media/esquadriapvc.8afda6502241bb1e4de0.jpg",
     "static/media/temperado.jpg": "/static/media/temperado.36f0377d7df80dbd267a.jpg",
     "static/media/portas.jpg": "/static/media/portas.ae32fea5466ff3acbc72.jpg",
     "static/media/personalizado1.jpg": "/static/media/personalizado1.9cf1f7638fc6888cc20d.jpg",
@@ -47,11 +48,11 @@
     "static/media/reparos.jpg": "/static/media/reparos.7eb753faa8156c1de7c6.jpg",
     "static/media/telhadoIcon.png": "/static/media/telhadoIcon.0f4c1d00d0c8b92aa711.png",
     "index.html": "/index.html",
-    "main.46fcccca.css.map": "/static/css/main.46fcccca.css.map",
-    "main.756a63d7.js.map": "/static/js/main.756a63d7.js.map"
+    "main.839b2658.css.map": "/static/css/main.839b2658.css.map",
+    "main.67b2b9d0.js.map": "/static/js/main.67b2b9d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.46fcccca.css",
-    "static/js/main.756a63d7.js"
+    "static/css/main.839b2658.css",
+    "static/js/main.67b2b9d0.js"
   ]
 }

@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
+  cursor: context-menu;
   @media (max-width: 768px) {
     padding: 20px 5%;
   }
@@ -46,6 +46,7 @@
               color: #333;
               text-decoration: none;
               transition: color 0.3s;
+              cursor: pointer;
     
               &:hover {
                 color: #424F5C;
@@ -83,10 +84,11 @@
     p {
      
       margin: 0;
+      
     }
 
     ul {
-      list-style: none; // Remover as bolinhas
+      list-style: none; 
       padding: 0;
 
       li {
@@ -94,12 +96,13 @@
 
         a {
           color: #333;
-          text-decoration: none; // Remover o sublinhado dos links
+          text-decoration: none; 
           transition: color 0.3s;
+          cursor: pointer;
           
 
           &:hover {
-            color: #424F5C; // Cor ao passar o mouse
+            color: #424F5C; 
           }
         }
       }
