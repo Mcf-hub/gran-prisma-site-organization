@@ -42,6 +42,8 @@ import cobertura from '../../../Assets/cobertura.jpg';
 import aluminio from '../../../Assets/esquadria.jpg';
 import aluminio2 from '../../../Assets/esquadria2.jpg';
 
+import pvc from '../../../Assets/esquadriapvc.jpg'
+
 import divisoria from '../../../Assets/divisoria.jpg';
 
 import elevador from '../../../Assets/elevador.jpg';
@@ -87,6 +89,7 @@ const ServiceGrid = () => {
     { name: 'Espelhos', image:espelhos, images: [] },
     { name: 'Coberturas em Vidro e Policarbonato', image:cobertura, images: [] },
     { name: 'Esquadrias de Alumínio', image: aluminio, images: [aluminio2] },
+    { name: 'Esquadrias de PVC', image: pvc, images: [] },
     { name: 'Divisórias de Vidro', image:divisoria, images: [] },
     { name: 'Projetos Personalizados', image:personalizados, images: [personalizados2, personalizados3] },
     { name: 'Vidros Decorativos', image:decorativos, images: [] },
