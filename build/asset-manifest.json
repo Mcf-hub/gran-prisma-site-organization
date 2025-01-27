@@ -1,13 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.839b2658.css",
-    "main.js": "/static/js/main.d09ca115.js",
+    "main.js": "/static/js/main.f97fb199.js",
+    "static/media/box5.jpg": "/static/media/box5.31c9b22898acb1220593.jpg",
+    "static/media/portas3.jpg": "/static/media/portas3.cd817fa32edadb94bfde.jpg",
     "static/media/logopng.png": "/static/media/logopng.6e5a8d8226366d7505ae.png",
     "static/media/gazebo4.jpg": "/static/media/gazebo4.8d30f2e24e9f91247360.jpg",
     "static/media/sacada2.jpg": "/static/media/sacada2.6ef76600fe01a3cd5e6b.jpg",
     "static/media/telhado.jpg": "/static/media/telhado.8d8b887664da27e7efe9.jpg",
     "static/media/fachada3.jpg": "/static/media/fachada3.a87432abdaa7f466366d.jpg",
     "static/media/janela.jpg": "/static/media/janela.448d3b9579b3af35b386.jpg",
+    "static/media/fachada6.jpg": "/static/media/fachada6.8d456caa8f7647a05d76.jpg",
     "static/media/telhado5.jpg": "/static/media/telhado5.91306326c4ddde568a79.jpg",
     "static/media/chaleprincipal.jpg": "/static/media/chaleprincipal.187ab091ab8c2f04e00a.jpg",
     "static/media/sacada.jpg": "/static/media/sacada.cdfeb83d9dfd08c86ce8.jpg",
@@ -49,10 +52,10 @@
     "static/media/telhadoIcon.png": "/static/media/telhadoIcon.0f4c1d00d0c8b92aa711.png",
     "index.html": "/index.html",
     "main.839b2658.css.map": "/static/css/main.839b2658.css.map",
-    "main.d09ca115.js.map": "/static/js/main.d09ca115.js.map"
+    "main.f97fb199.js.map": "/static/js/main.f97fb199.js.map"
   },
   "entrypoints": [
     "static/css/main.839b2658.css",
-    "static/js/main.d09ca115.js"
+    "static/js/main.f97fb199.js"
   ]
 }
